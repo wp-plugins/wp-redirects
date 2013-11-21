@@ -1,31 +1,34 @@
 === WP Redirects ===
 
-Contributors: WebSharks
-Donate link: http://www.s2member.com/donate/
-Tags: redirect, redirects, 301 redirects, links, relocate, SEO, post type, post types, utilities, posts, pages
+Stable tag: 131121
+Requires at least: 3.2
+Tested up to: 3.7.1
+Text Domain: wp-redirects
 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Stable tag: 130206
-Requires at least: 3.2
-Tested up to: 3.6-alpha
+Contributors: WebSharks
+Donate link: http://www.websharks-inc.com/r/wp-theme-plugin-donation/
+Tags: redirect, redirects, 301 redirects, links, relocate, SEO, post type, post types, utilities, posts, pages
 
-Create Redirects! This plugin adds a new Post Type. Redirect from anywhere — to anywhere. A very lightweight plugin!
+Create Redirects! This plugin adds a new Post Type.
 
 == Description ==
 
-This plugin is VERY simple. There are NO configuration options necessary.
+Redirect from anywhere — to anywhere. A very lightweight plugin!
 
-This plugin adds a new Post Type. This plugin makes it SUPER easy to create redirections on your site. From anywhere — to anywhere! It even creates redirection links for you (i.e. Redirect Permalinks — using these is optional however). This is a very lightweight plugin.
+This plugin is VERY simple; NO configuration options necessary.
+
+This plugin adds a new Post Type; making it SUPER easy to create redirections on your site. From anywhere — to anywhere! It even creates redirection links for you (i.e. Redirect Permalinks — using these is optional however).
 
 After installing this plugin, create a new Redirect (find menu item on the left in your Dashboard). Redirects can be simple or complex. You can even use regular expression patterns! It is also possible to control the HTTP status code that is sent to a browser during redirection.
 
 == Frequently Asked Questions ==
 
-#### Who can manage Redirects in the Dashboard?
+= Who can manage Redirects in the Dashboard? =
 
-By default, only WordPress® Administrators can manage (i.e. create/edit) Redirects. If you would like to give others the Capabilities required, please use a plugin like [Enhanced Capability Manager](http://wordpress.org/extend/plugins/capability-manager-enhanced/).
+By default, only WordPress® Administrators can manage (i.e. create/edit/delete/manage) Redirects. Editors and Authors can create/edit/delete their own Redirects, but permissions are limited for Editors/Authors. If you would like to give other WordPress Roles the Capabilities required, please use a plugin like [Enhanced Capability Manager](http://wordpress.org/extend/plugins/capability-manager-enhanced/).
 
 Add the following Capabilities to the additional Roles that should be allowed to manage Redirects.
 
@@ -43,14 +46,44 @@ Add the following Capabilities to the additional Roles that should be allowed to
 				'read_private_redirects'
 			);
 
+NOTE: There are also some WordPress filters integrated into the code for this plugin, which can make permissions easier to deal with in many cases. You can have a look at the source code and determine how to proceed on your own; if you choose this route.
+
 == Installation ==
 
-= WP Redirects is very easy to install (instructions) =
+= WP Redirects is Very Easy to Install =
+
 1. Upload the `/wp-redirects` folder to your `/wp-content/plugins/` directory.
-2. Activate the plugin through the `Plugins` menu in WordPress®.
-3. Create Redirects in WordPress® (see: Dashboard -› Redirects).
+2. Activate the plugin through the **Plugins** menu in WordPress®.
+3. Create Redirects in WordPress® (see: **Dashboard -› Redirects**).
+
+== License ==
+
+Copyright: © 2013 [WebSharks, Inc.](http://www.websharks-inc.com/bizdev/) (coded in the USA)
+
+Released under the terms of the [GNU General Public License](http://www.gnu.org/licenses/gpl-2.0.html).
+
+= Credits / Additional Acknowledgments =
+
+* Software designed for WordPress®.
+	- GPL License <http://codex.wordpress.org/GPL>
+	- WordPress® <http://wordpress.org>
+* Some JavaScript extensions require jQuery.
+	- GPL-Compatible License <http://jquery.org/license>
+	- jQuery <http://jquery.com/>
+* CSS framework and some JavaScript functionality provided by Bootstrap.
+	- GPL-Compatible License <http://getbootstrap.com/getting-started/#license-faqs>
+	- Bootstrap <http://getbootstrap.com/>
+* Icons provided by Font Awesome.
+	- GPL-Compatible License <http://fortawesome.github.io/Font-Awesome/license/>
+	- Font Awesome <http://fortawesome.github.io/Font-Awesome/>
 
 == Changelog ==
 
+= v131121 =
+
+* General code cleanup and optimizatioon.
+* Adding support for categories and tags against Redirects.
+
 = v130206 =
+
  * Initial release.
